@@ -1,0 +1,31 @@
+#include <iostream>
+
+int main() {
+  char ops;
+  float a,b;
+  std::cout<<"enter operation to perform calculation:";
+  std::cin>>ops;
+  std::cout<<"Enter first num:-";
+  std::cin>>a;
+  std::cout<<"Enter second num:-";
+  std::cin>>b;
+  switch(ops)
+  {
+    case '+':
+    std::cout<<"a+b:"<<a+b;
+    break;
+    case '-':
+    std::cout<<"a-b:"<<a-b;
+    break;
+    case '*':
+    std::cout<<"a*b:"<<a*b;
+    break;
+    case '/':
+    std::cout<<"a/b:"<<a/b;
+    break;
+    default:
+    std::cout<<"Error!not valid input";
+    break;
+  }
+  return 0;
+}
